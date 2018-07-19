@@ -41,7 +41,7 @@ export default class Presentation extends React.Component {
         - By FB.`}
         >
           <Heading size={1} fit lineHeight={1} textColor="secondary">
-						REST vs GraphQL
+            REST vs GraphQL
           </Heading>
         </Slide>
 
@@ -52,7 +52,7 @@ export default class Presentation extends React.Component {
          - Though graphQL is Protocol agnostic.`}
         >
           <Heading size={1} fit lineHeight={1} textColor="secondary">
-						What is GraphQL?
+            What is GraphQL?
           </Heading>
         </Slide>
 
@@ -62,14 +62,14 @@ export default class Presentation extends React.Component {
           - GraphQL, we only have one endpoint with which we access data on a server.`}
         >
           <Heading size={1} fit textColor="secondary">
-						Similarities between <br /> REST & GraphQL
+            Similarities between <br /> REST & GraphQL
           </Heading>
         </Slide>
 
         {/*Slide 4*/}
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit textColor="secondary">
-						Data Fetching
+            Data Fetching
           </Heading>
         </Slide>
 
@@ -153,29 +153,29 @@ export default class Presentation extends React.Component {
 
         {/*Slide 6*/}
         <Slide transition={["fade"]} bgColor="primary" notes={`
-					- REST: Three different requests to the server.
- 					- GRAPHQL: Single request to the server.
- 					- GraphQL reduces network requests by allowing us fetch or retrieve all the data we need in a single query.`}
+          - REST: Three different requests to the server.
+           - GRAPHQL: Single request to the server.
+           - GraphQL reduces network requests by allowing us fetch or retrieve all the data we need in a single query.`}
         >
           <Heading size={1} fit textColor="secondary">
-						Network Requests
+            Network Requests
           </Heading>
         </Slide>
 
         {/*Slide 7*/}
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={1} fit textColor="secondary">
-						Caching
+            Caching
           </Heading>
           <br />
           <Link href="https://www.apollographql.com/client" textAlign="right">
             <Text textColor="tertiary">
-							-- Apollo Client
+              -- Apollo Client
             </Text>
           </Link>
           <Link href="https://fastql.io" textAlign="right">
             <Text textColor="tertiary">
-							-- FastQL
+              -- FastQL
             </Text>
           </Link>
 
@@ -184,12 +184,12 @@ export default class Presentation extends React.Component {
 
         {/*Slide 8*/}
         <Slide transition={["fade"]} bgColor="primary" notes={`
-					- (Over-fetch) Downloading superfluous data.
- 					- (Under-fetch) Leads to the n+1 problem.
-				`}
+          - (Over-fetch) Downloading superfluous data.
+           - (Under-fetch) Leads to the n+1 problem.
+        `}
         >
           <Heading size={1} fit textColor="secondary">
-						Over / Under Fetching
+            Over / Under Fetching
           </Heading>
           <br />
 
@@ -197,12 +197,12 @@ export default class Presentation extends React.Component {
 
         {/*Slide 8*/}
         <Slide transition={["fade"]} bgColor="primary" notes={`
-					- REST: HTTP status code.
- 					- GraphQL: 200 OK.
-				`}
+          - REST: HTTP status code.
+           - GraphQL: 200 OK.
+        `}
         >
           <Heading size={1} fit textColor="secondary">
-						Error Handling
+            Error Handling
           </Heading>
         </Slide>
 
@@ -211,19 +211,19 @@ export default class Presentation extends React.Component {
           <List>
             <ListItem textColor="tertiary">
               <Link href="https://github.com/sshyam-gupta/TODO-GraphQL">
-								TODO app
+                TODO app
               </Link>
               <Link style={{ padding: "0 5px" }} href="https://react-todo-graphql.surge.sh/">
-								(Demo)
+                (Demo)
               </Link>
             </ListItem>
 
             <ListItem textColor="tertiary">
               <Link href="https://github.com/sshyam-gupta/pokemon-app">
-								Pokemon app
+                Pokemon app
               </Link>
               <Link style={{ padding: "0 5px" }} href="https://react-pokemon-graphql.surge.sh/">
-								(Demo)
+                (Demo)
               </Link>
             </ListItem>
           </List>
