@@ -3,6 +3,7 @@
   "version": "1.0.1",
   "description": "ReactJS Powered Presentation Framework",
   "main": "lib/index.js",
+  "homepage": "http://react-demo-graphql.surge.sh",
   "scripts": {
     "clean": "rimraf dist",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.production.js",
