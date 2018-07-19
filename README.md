@@ -1,4 +1,8 @@
-# Spectacle Boilerplate
+# Introduction to GraphQL
+
+[Link to PDF](https://github.com/sshyam-gupta/grapql-presentation/blob/master/presentation.pdf)
+
+[Link to Presentaion](http://react-demo-graphql.surge.sh)
 
 ## Contents
 
@@ -12,17 +16,17 @@ The Spectacle core API is available at [https://github.com/FormidableLabs/specta
 
 ## Getting Started
 
-After downloading the boilerplate, your first order of business is to open a terminal and run 
+After downloading the boilerplate, your first order of business is to open a terminal and run
 ```bash
 yarn
 ```
-or 
+or
 ```bash
 npm install
 ```
 if you're about that life.
 
-Next, run 
+Next, run
 ```bash
 rm -R .git
 ```
@@ -42,7 +46,7 @@ Building the dist version of the project is as easy as running
 npm run build
 ```
 
-If you want to deploy the slideshow to surge, run 
+If you want to deploy the slideshow to surge, run
 ```bash
 npm run deploy
 ```
