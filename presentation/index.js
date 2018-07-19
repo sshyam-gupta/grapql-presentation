@@ -17,8 +17,13 @@ import {
 // Import theme
 import createTheme from "spectacle/lib/themes/default";
 
-const versioningImg = require("../assets/graphql-versioning.gif");
-const logo = require("../assets/graphql.png");
+const images = {
+  versioningImg: require("../assets/graphql-versioning.gif"),
+  logo: require("../assets/graphql.png"),
+  graphqlway: require("../assets/graphqlway.png"),
+  restway: require("../assets/restway.png")
+};
+
 // Require CSS
 require("normalize.css");
 
@@ -45,7 +50,7 @@ export default class Presentation extends React.Component {
 
         {/*Slide 2*/}
         <Slide transition={["fade"]} bgColor="primary">
-          <img src={logo} height="250px" />
+          <img src={images.logo} height="250px" />
           <br />
           <br />
           <Heading size={3} lineHeight={1} textColor="secondary">
@@ -53,12 +58,12 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
-        {/*Slide 4*/}
+        {/*Slide 3*/}
         <Slide transition={["fade"]} bgColor="primary" notes={`
           - Typical REST API, to fetch or retrieve data from a server, we might end up making requests to multiple endpoints.
           - GraphQL, we only have one endpoint with which we access data on a server.`}
         >
-          <Heading size={1} fit textColor="secondary">
+          <Heading size={3} textColor="secondary">
             Network Requests
           </Heading>
         </Slide>
@@ -133,7 +138,7 @@ export default class Presentation extends React.Component {
           </div>
         </Slide>
 
-        {/*Slide 5*/}
+        {/*Slide 4*/}
         <Slide transition={["fade"]} bgColor="primary">
           <Markdown textAlign="left" textSize="18" bgColor="quarternary" style={{ padding: "5px 25px" }}>
             {`
@@ -171,15 +176,34 @@ export default class Presentation extends React.Component {
           </Markdown>
         </Slide>
 
-        {/*Slide 8*/}
+        {/*Slide 5*/}
+        <Slide transition={["fade"]} bgColor="primary">
+          <Heading size={3} textColor="secondary">
+            Overview
+          </Heading>
+          <br />
+          <div style={{ display: "flex" }}>
+            <div>
+              <Appear>
+                <img src={images.restway} height="250px" width="500px" />
+              </Appear>
+            </div>
+            <div>
+              <Appear>
+                <img src={images.graphqlway} height="250px" width="500px" />
+              </Appear>
+            </div>
+          </div>
+        </Slide>
+
+        {/*Slide 6*/}
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} textColor="secondary">
             Over / Under Fetching
           </Heading>
-          <br />
         </Slide>
 
-        {/*Slide 8*/}
+        {/*Slide 7*/}
         <Slide transition={["fade"]} bgColor="primary" notes={`
           - REST: HTTP status code.
            - GraphQL: 200 OK.
@@ -190,7 +214,7 @@ export default class Presentation extends React.Component {
           </Heading>
         </Slide>
 
-        {/*Slide 7*/}
+        {/*Slide 8*/}
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} textColor="secondary">
             Caching
@@ -208,18 +232,18 @@ export default class Presentation extends React.Component {
           </Appear>
         </Slide>
 
-        {/*Slide 8*/}
+        {/*Slide 9*/}
         <Slide transition={["fade"]} bgColor="primary">
           <Heading size={3} textColor="secondary">
             Versioning
           </Heading>
           <br />
           <Appear>
-            <img src={versioningImg} />
+            <img src={images.versioningImg} />
           </Appear>
         </Slide>
 
-        {/*Slide 8*/}
+        {/*Slide 10*/}
         <Slide transition={["fade"]} bgColor="primary" textAlign="right">
           <List>
             <ListItem textColor="tertiary">
