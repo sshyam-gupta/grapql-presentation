@@ -59,16 +59,16 @@ export default class Presentation extends React.Component {
         </Slide>
 
         {/*Slide 3*/}
-        <Slide transition={["fade"]} bgColor="primary" notes={`
+        {/* <Slide transition={["fade"]} bgColor="primary" notes={`
           - Typical REST API, to fetch or retrieve data from a server, we might end up making requests to multiple endpoints.
           - GraphQL, we only have one endpoint with which we access data on a server.`}
         >
           <Heading size={3} textColor="secondary">
             Network Requests
           </Heading>
-        </Slide>
+        </Slide> */}
 
-        {/*Slide 5*/}
+        {/*Slide 3*/}
         <Slide transition={["fade"]} bgColor="primary" textSize={"25"}>
           <Text textAlign="left">
             {"We want to retrieve an user along with the task(s) he/she has created, and in turn get the comments on each of the task(s)."}
